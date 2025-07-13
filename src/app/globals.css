@@ -1,7 +1,7 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
 @theme inline {
   --color-background: var(--background);
@@ -116,7 +116,22 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  p {
+    cursor: default;
+  }
+
+  ul {
+    list-style: inside;
+    padding-left: 2rem;
+  }
+
+  ol {
+    list-style: decimal;
+    padding-left: 2rem;
   }
 }
